@@ -1,0 +1,8 @@
+.ImgContainer {
+  width: 500px;
+  height: 500px;
+}
+.ImgContainer > img {
+ width: 100%;
+ height: auto;
+}
