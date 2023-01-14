@@ -1,0 +1,61 @@
+.intro {
+  color: white;
+  display: flex;
+  height: 600px;
+}
+
+.intro-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 6;
+  padding: 0 3rem;
+  background-color: rgb(100, 140, 200);
+  height: 100%;
+}
+
+.intro-designs {
+  flex: 4;
+  height: 100%;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.circle, 
+.square {
+  height: 50px;
+  width: 50px;
+  animation: fromTop 5s ease-in infinite;
+  position: absolute;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 10%;
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: perspective(100px) translateZ(-100px)
+  }
+
+  50% {
+    opacity: 1;
+    transform: none
+  }
+
+  100% {
+    opacity: 0;
+    transform: perspective(100px) translateZ(-100px)
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .intro-designs {
+    display: none;
+  }
+} 

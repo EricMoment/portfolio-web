@@ -1,0 +1,91 @@
+.projects {
+  padding: 0 3rem;
+  background-color: white;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-texts {
+  flex: 2;
+  
+}
+
+.project-animate-left {
+  animation: fromLeft 1s linear;
+}
+
+
+.project-title {
+  color: blue;
+  font-family: Gill Sans;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.project-description {
+  margin: 1rem 0;
+  font-weight: 600;
+  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.project-skills > a{
+  color: blue;
+}
+.cs-sim { /* You have to put this before project-preview to apply cover */
+  background: url('./images/cs-sim-demo.png');
+}
+
+.battleship {
+  background: url('./images/battleship.png');
+}
+
+.weather {
+  background: url('./images/weather.png');
+}
+.project-preview {
+  flex: 3;
+  width: 450px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+.project-animate-right {
+  animation: fromRight 1s linear;
+}
+.more {
+  color: black  ;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
