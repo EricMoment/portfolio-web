@@ -1,0 +1,15 @@
+.about-me {
+  padding: 2rem 3rem 5rem 3rem;
+  background-color: rgb(219, 219, 219);
+
+}
+
+.about-me > h1 {
+  font-family: Gill Sans;
+}
+
+.about-me-self-eval {
+  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}

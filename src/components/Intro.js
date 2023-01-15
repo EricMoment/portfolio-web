@@ -28,10 +28,10 @@ export default function Intro() {
   return (
     <div className="intro">
       <div className="intro-words">
-        <h1>こんにちは！</h1>
-        <h2>My name is Eric Moment. </h2>
-        <h2>I am a Nepalese Front End developer.</h2>
-        <h2>I focus on creating applications with clean, elegant and efficient code.</h2>
+        <h1 className="intro-words-1">Hola!</h1>
+        <h2 className="intro-words-2">My name is Stan Moment. </h2>
+        <h2 className="intro-words-3">I am a Vietnamese Front End developer.</h2>
+        <h2 className="intro-words-4">I focus on creating applications with clean, elegant and efficient code.</h2>
       </div>
       <div ref={designDiv} className="intro-designs">
         <div className="circle" style={{top: `${randomInt(10, 540)}px`, left: `${randomInt(10, windowWidth - 60)}px`, backgroundColor: `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`}}></div>

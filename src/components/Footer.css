@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100%;
   height: 250px;
-  background-color: cornflowerblue;
+  background-color: rgb(182, 230, 224);;
 }
 
 .footer-links {
@@ -14,13 +14,17 @@
   width: 100%;
 }
 .footer-links > p {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   border: 1px solid gray;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 30px #cf8282, -5px -5px 30px #94b8f7;
+  
 }
 
 .footer-links > p > a > img {
@@ -29,5 +33,6 @@
 }
 
 .footer > h2 {
-  font-family: monaco;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }

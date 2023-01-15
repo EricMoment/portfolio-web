@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/Header';
 import Intro from "./components/Intro";
 import Project from "./components/Projects";
+import Skills from "./components/Skills";
+import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import fae from './components/images/faerielle.png'
 
@@ -12,7 +14,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIntro(false)
-    }, 2000);
+    }, 1000);
   }, [])
   
   if (intro) {
@@ -29,6 +31,8 @@ function App() {
       <Header />
       <Intro />
       <Project />
+      <Skills />
+      <AboutMe />
       <Footer />
     </div>
   )

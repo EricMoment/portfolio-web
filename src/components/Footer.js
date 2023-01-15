@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer-links">
-        <p><a href="https://www.linkedin.com/in/alexandre-dev/"><img src={linkedin} alt="linkedin"></img></a></p>
+        <p><a href="https://www.linkedin.com/in/stan-moment-dev"><img src={linkedin} alt="linkedin"></img></a></p>
         <p><a href="https://github.com/EricMoment"><img src={github} alt="linkedin"></img></a></p>
         <p><a href="index.html"><img src={cv} alt="cv"></img></a></p>
       </div>

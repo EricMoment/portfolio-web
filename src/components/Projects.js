@@ -7,7 +7,7 @@ export default function Project() {
 
   return (
     <div id="projects" className="projects" ref={ref}>
-      <h1>プロジェクト</h1>
+      <h1>Projects</h1>
       <div className="project">
         <div className={inView? "project-texts project-animate-left" : "project-texts"}>
           <a className="project-title" href="https://ericmoment.github.io/cs-sim/">Chaos Scroll Simulator </a>
@@ -41,7 +41,7 @@ export default function Project() {
         </div>
         <a className={inView? "project-preview weather project-animate-right" : "project-preview weather"} href="https://ericmoment.github.io/Simple-Weather-App/"> </a>
       </div>
-      <div className="project-title more">And More..</div>
+      <div className="project project-title more">And More..</div>
     </div>
   )
 }

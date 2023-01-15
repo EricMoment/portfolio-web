@@ -1,0 +1,48 @@
+.skills {
+  padding:2rem 3rem 5rem 3rem;
+  background-color: #bbc770
+}
+
+.skills > h1 {
+  font-family: Gill Sans;
+}
+
+.skill-icons-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(8, 60px);
+}
+
+.icon-desc {
+  width: 58px;
+  height: 58px;
+  border-radius: 10%;
+  animation: rotate .5s linear; /*name duration timing-function delay*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  animation: rotate .5s linear;
+}
+
+.hiddenContent {
+  display: none;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: rotateY(120deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}

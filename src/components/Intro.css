@@ -12,6 +12,35 @@
   padding: 0 3rem;
   background-color: rgb(100, 140, 200);
   height: 100%;
+  animation: fromTop 1s ease-in ;
+  text-decoration: none;
+}
+
+.intro-words-1 {
+  font-family: Gill Sans;
+  animation: fromTop2 0.8s ease-in 0.8s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.intro-words-2 {
+  animation: fromTop2 0.8s ease-in 1s;
+}
+
+.intro-words-3 {
+  animation: fromTop2 0.8s ease-in 1.2s;
+}
+
+.intro-words-4 {
+  animation: fromTop2 0.8s ease-in 1.4s;
+}
+
+.intro-words-2,
+.intro-words-3,
+.intro-words-4 {
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .intro-designs {
@@ -25,7 +54,7 @@
 .square {
   height: 50px;
   width: 50px;
-  animation: fromTop 5s ease-in infinite;
+  animation: burst 5s ease-in infinite;
   position: absolute;
 }
 
@@ -38,6 +67,32 @@
 }
 
 @keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromTop2 {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes burst {
   0% {
     opacity: 0;
     transform: perspective(100px) translateZ(-100px)
