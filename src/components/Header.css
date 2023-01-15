@@ -6,26 +6,35 @@
   background-color: rgb(52, 45, 45);
 }
 
-.header-myName {
-  font-family: Gill Sans;
-  font-weight: bold;
-}
-
-a {
+nav > a {
   text-decoration: none;
   color: white;
-}
-
-ul {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
+  margin: 0 12px;
+}
+
+.header-myName {
+  text-decoration: none;
+  color: white;
+  font-family: Gill Sans;
+  font-weight: bold;
+}
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 2rem
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 2rem 26px 2rem 2rem
+  }
+  nav > a {
+    margin: 0 6px;
+  }
+  .header-myName > b {
+    display: none;
+  }
 }

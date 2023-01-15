@@ -4,19 +4,11 @@ import './Header.css'
 export default function Header() {
   return (
     <div className="header">
-      <a className="header-myName" href="index.html">Stan Moment</a>
+      <a className="header-myName" href="index.html">Stan<b> Moment</b></a>
       <nav className="header-navi">
-        <ul>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-        </ul>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about-me">About Me</a>
       </nav>
     </div>
   )

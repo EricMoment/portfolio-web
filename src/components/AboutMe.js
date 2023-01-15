@@ -12,7 +12,8 @@ export default function AboutMe() {
       I self-learned HTML, CSS, React and I am currently learning the back-end Express.js. 
       I love using data and logic to tackle problems, and programming helps to do exactly that. 
       I am excited to pursue a position as a Junior Web Engineer and apply my skills in developing and maintaining web services.
-      Meanwhile, I am also learning Japanese with aim to passing JLPT N2.
+      Meanwhile, I am also learning Japanese with aim to passing JLPT N2. 
+      <b> I love MapleStory.</b>
       </div>
     </div>
   )

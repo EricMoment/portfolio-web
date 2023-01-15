@@ -1,6 +1,6 @@
 .skills {
   padding:2rem 3rem 5rem 3rem;
-  background-color: #bbc770
+  background-color: #bbc770;
 }
 
 .skills > h1 {
@@ -8,9 +8,10 @@
 }
 
 .skill-icons-container {
-  display: grid;
+  display: flex;
   gap: 2rem;
-  grid-template-columns: repeat(8, 60px);
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .icon-desc {
@@ -44,5 +45,11 @@
   100% {
     opacity: 1;
     transform: rotateY(0);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .skills {
+    padding: 1rem 2rem 3rem 2rem;
   }
 }
