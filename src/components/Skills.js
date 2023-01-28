@@ -1,16 +1,17 @@
 import React, {useState} from "react"
 import './Skills.css'
-import {html, css, js, git, github, react_Icon, node_Icon, mongodb} from './images/techIcons/collection'
+import {html, css, js, git, react_Icon, node_Icon, 
+  mongodb, express} from './images/techIcons/collection'
 
 export default function Skills() {
   const [htmlIcon, setHtmlIcon] = useState(false)
   const [cssIcon, setCSSIcon] = useState(false)
   const [jsIcon, setJSIcon] = useState(false)
   const [gitIcon, setGitIcon] = useState(false)
-  const [githubIcon, setGithubIcon] = useState(false)
   const [reactIcon, setReactIcon] = useState(false)
   const [nodeIcon, setNodeIcon] = useState(false)
   const [mongodbIcon, setMongodbIcon] = useState(false)
+  const [expressIcon, setExpressIcon] = useState(false)
   function handleHtmlEnter() {
     setHtmlIcon(true)
   }
@@ -35,12 +36,6 @@ export default function Skills() {
   function handleGitLeave() {
     setGitIcon(false)
   }
-  function handleGithubEnter() {
-    setGithubIcon(true)
-  }
-  function handleGithubLeave() {
-    setGithubIcon(false)
-  }
   function handleReactEnter() {
     setReactIcon(true)
   }
@@ -59,6 +54,12 @@ export default function Skills() {
   function handleMongoDBLeave() {
     setMongodbIcon(false)
   }
+  function handleExpressEnter() {
+    setExpressIcon(true)
+  }
+  function handleExpressLeave() {
+    setExpressIcon(false)
+  }
   return (
     <div id="skills" className="skills">
       <h1>Skills</h1>
@@ -71,15 +72,14 @@ export default function Skills() {
         <div className={jsIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleJSLeave}><p>JS</p></div>
         <img className={gitIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleGitEnter} src={git} alt='Git'></img>
         <div className={gitIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleGitLeave}><p>Git</p></div>
-        <img className={githubIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleGithubEnter} src={github} alt='GitHub'></img>
-        <div className={githubIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleGithubLeave}><p>Github</p></div>
         <img className={reactIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleReactEnter} src={react_Icon} alt='React'></img>
         <div className={reactIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleReactLeave}><p>React</p></div>
         <img className={nodeIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleNodeEnter} src={node_Icon} alt='Node'></img>
         <div className={nodeIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleNodeLeave}><p>Node</p></div>
         <img className={mongodbIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleMongoDBEnter} src={mongodb} alt='MongoDB'></img>
         <div className={mongodbIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleMongoDBLeave}><p>Mongo</p></div>
-
+        <img className={expressIcon? 'hiddenContent': 'skill-icon'} onMouseEnter={handleExpressEnter} src={express} alt='Express'></img>
+        <div className={expressIcon? "icon-desc": "icon-desc hiddenContent"} onMouseLeave={handleExpressLeave}><p>Express</p></div>
       </div>
     </div>
   )

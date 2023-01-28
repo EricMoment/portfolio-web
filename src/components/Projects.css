@@ -38,13 +38,15 @@
 
 .project-description {
   margin: 1rem 0;
-  font-weight: 600;
   line-height: 1.6;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .project-skills > a{
   color: blue;
+}
+.message-board {
+  background: url('./images/message-board.png');
 }
 .cs-sim { /* You have to put this before project-preview to apply cover */
   background: url('./images/cs-sim-demo.png');

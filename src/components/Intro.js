@@ -14,23 +14,13 @@ export default function Intro() {
       setwindowWidth(designDiv.current.offsetWidth)
     }
   }, [])
-  useLayoutEffect(() => {
-    function measure() {
-      if (designDiv.current.offsetWidth > 0) {
-        setwindowWidth(designDiv.current.offsetWidth)
-      }
-    }
-    window.addEventListener("resize", measure );
-    return () => {
-      window.removeEventListener("resize", measure );
-    };
-  }, [])
+
   return (
     <div className="intro">
       <div className="intro-words">
         <h1 className="intro-words-1">Hola!</h1>
-        <h2 className="intro-words-2">My name is Stan Moment. </h2>
-        <h2 className="intro-words-3">I am a Vietnamese Front End developer.</h2>
+        <h2 className="intro-words-2">My name is Stan Huang. </h2>
+        <h2 className="intro-words-3">I am a Full Stack developer from Hong Kong.</h2>
         <h2 className="intro-words-4">I focus on creating applications with clean, elegant and efficient code.</h2>
       </div>
       <div ref={designDiv} className="intro-designs">

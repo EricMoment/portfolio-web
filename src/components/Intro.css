@@ -10,7 +10,7 @@
   justify-content: center;
   flex: 6;
   padding: 0 3rem;
-  background-color: rgb(100, 140, 200);
+  background: linear-gradient(135deg, rgb(100,140,200), lightgreen);
   height: 100%;
   animation: fromTop 1s ease-in ;
   text-decoration: none;
