@@ -18,9 +18,9 @@ export default function Intro() {
   return (
     <div className="intro">
       <div className="intro-words">
-        <h1 className="intro-words-1">Hola!</h1>
-        <h2 className="intro-words-2">My name is Stan Huang. </h2>
-        <h2 className="intro-words-3">I am a Full Stack developer from Hong Kong.</h2>
+        <h1 className="intro-words-1">Greetings</h1>
+        <h2 className="intro-words-2">My name is Huayu Huang. </h2>
+        <h2 className="intro-words-3">I am a Full Stack developer from China.</h2>
         <h2 className="intro-words-4">I focus on creating applications with clean, elegant and efficient code.</h2>
       </div>
       <div ref={designDiv} className="intro-designs">

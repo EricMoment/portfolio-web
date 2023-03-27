@@ -3,12 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(52, 45, 45);
+  background-color: rgb(219, 219, 219);
 }
 
 nav > a {
   text-decoration: none;
-  color: white;
+  color: black;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
@@ -17,7 +17,7 @@ nav > a {
 
 .header-myName {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: Gill Sans;
   font-weight: bold;
 }

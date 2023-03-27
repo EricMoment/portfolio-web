@@ -12,7 +12,7 @@ export default function AboutMe() {
           <img src={face} alt='self-portrait' className="self-portrait"></img>
         </div>
         <div className="about-me-self-eval">
-          Greetings! I am Stan Huang, a Junior Web Engineer from Hong Kong. 
+          Greetings! I am Huayu Huang, a Junior Web Engineer from China. 
           I graduated in Accounting and worked in the industry for a year before thinking of changing my career to Web Development. 
           I learned HTML, CSS, React, NodeJS by reading and following tutorials online.
           I love using data and logic to tackle problems, and programming helps to do exactly that. 
