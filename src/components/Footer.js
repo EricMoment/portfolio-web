@@ -1,7 +1,7 @@
 import React from "react"
 import github from './images/github.png'
 import resume from '../resume.pdf'
-import resumeJ from '../resume_jis.pdf'
+import resumeJ from '../resumej.pdf'
 import './Footer.css'
 
 export default function Footer() {
