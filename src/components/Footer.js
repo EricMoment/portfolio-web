@@ -9,7 +9,6 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-links">
         <p><a href="https://github.com/EricMoment"><img src={github} alt="linkedin"></img></a></p>
-        <p><a href={resume}><p>CV</p></a></p>
         <p><a href={resumeJ}><p>履歴書</p></a></p>
       </div>  
       <h2>a365900630@gmail.com</h2>
